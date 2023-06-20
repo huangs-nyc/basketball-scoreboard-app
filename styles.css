@@ -9,7 +9,7 @@ body {
     border: 10px solid white;
     border-radius: 20px;
     width: 800px;
-    height: 650px;
+    height: 500px;
     margin: 150px auto;
 }
 
@@ -17,7 +17,7 @@ h1 {
     font-family: 'Orbitron', sans-serif;
 }
 
-#timer {
+/* #timer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,12 +27,12 @@ h1 {
     border: 5px solid white;
     border-radius: 10px;
     width: 500px;
-}
+} */
 
 #score-period {
     display: flex;
     justify-content: space-evenly;
-    margin: 25px 0 150px 0;
+    margin: 50px 0 150px 0;
 }
 
 .score {
