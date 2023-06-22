@@ -8,33 +8,43 @@
     </head>
     <body>
         <div id="main">
-            <!-- <div id="timer">
-                <h3>TIME REMAINING</h3>
-                <div id="time-left">
-                <h1 class="adjust-number">12:00</h1>
-                </div>
-            </div> -->
             <div id="score-period">
                 <div class="score">
-                    <h3>HOME</h3>
+                    <h1>HOME</h1>
                     <h1 id= "home-score" class="adjust-number">0</h1>
-                    <button class="increase" onclick="homeIncrement()">ADD POINT</button>
-                    <button class="decrease" onclick="homeDecrease()">REMOVE POINT</button>
-                    <button class="reset" onclick="homeReset()">RESET</button>
+                    <div class="increasePoints">
+                        <button class="increase" onclick="increment('h',1)">+1</button>
+                        <button class="increase" onclick="increment('h',2)">+2</button>
+                        <button class="increase" onclick="increment('h',3)">+3</button>
+                    </div>
+                    <div class="decreasePoints">
+                        <button class="decrease" onclick="decrease('h',1)">-1</button>
+                        <button class="decrease" onclick="decrease('h',2)">-2</button>
+                        <button class="decrease" onclick="decrease('h',3)">-3</button>
+                    </div>
+                    <button class="reset" onclick="reset('h')">RESET</button>
                 </div>
                 <div id="period">
-                    <h3>PERIOD</h3>
+                    <h1>PERIOD</h1>
                     <h1 id="period-count" class="adjust-number">1</h1>
-                    <button class="increase" onclick="periodIncrement()">NEXT PERIOD</button>
-                    <button class="decrease" onclick="periodDecrease()">PREVIOUS PERIOD</button>
-                    <button class="reset" onclick="periodReset()">RESET</button>
+                    <button class="increase" onclick="increment('p',1)">NEXT PERIOD</button>
+                    <button class="decrease" onclick="decrease('p',1)">PREVIOUS PERIOD</button>
+                    <button class="reset" onclick="reset('p')">RESET</button>
                 </div>
                 <div class="score">
-                    <h3>GUEST</h3>
+                    <h1>GUEST</h1>
                     <h1 id="guest-score" class="adjust-number">0</h1>
-                    <button class="increase" onclick="guestIncrement()">ADD POINT</button>
-                    <button class="decrease" onclick="guestDecrease()">REMOVE POINT</button>
-                    <button class="reset" onclick="guestReset()">RESET</button>
+                    <div class="increasePoints">
+                        <button class="increase" onclick="increment('g',1)">+1</button>
+                        <button class="increase" onclick="increment('g',2)">+2</button>
+                        <button class="increase" onclick="increment('g',3)">+3</button>
+                    </div>
+                    <div class="decreasePoints">
+                        <button class="decrease" onclick="decrease('g',1)">-1</button>
+                        <button class="decrease" onclick="decrease('g',2)">-2</button>
+                        <button class="decrease" onclick="decrease('g',3)">-3</button>
+                    </div>
+                    <button class="reset" onclick="reset('g')">RESET</button>
                 </div>
             </div>
         </div>
